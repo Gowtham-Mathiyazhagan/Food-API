@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#head {
+ min-height: 50px;
+  text-align: center;
+  background: linear-gradient(40deg, white,orange);
+  font-family: 'EB Garamond', serif;
+  /* border: outset rgb(7, 7, 7) 1px; */
+  color:black;
+  
+}
+
+.saw {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+input[type="text"] {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: orange groove 1px;
+  width: 250px;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: orange;
+  text-align:center;
+}
+.first-btn {
+  display: block;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: orange groove 1px;
+  height: 30px;
+  width: 50px;
+  padding: 5px;
+  /* margin-left: 6px; */
+  background-color: orange;
+
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  /* text-decoration-line:underline; */
+  /* font-weight: bolder; */
+  font-size: 25px;
+  margin-bottom: 50px;
+  display: none;
+}
+.title-show{
+  display: block;
+}
+
+.meal-box>img {
+  /* height: 300px;
+width: 300px; */
+  width: 100%;
+}
+
+.meal-box {
+  /* height: 280px; */
+  max-width: 1280px;
+  overflow: hidden;
+  background-color: rgb(252, 251, 250);
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.repbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.meal-box>.title-food {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.meal-iteam {
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     */
+  min-height: 100vh;
+  text-align: center;
+}
+
+.recipe-btn {
+  height: 20px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.meal-box:hover {
+  box-shadow: rgb(114, 114, 114) 3px 3px 10px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.recipe-btn:hover {
+  box-shadow: rgb(250, 160, 58) 3px 3px 10px;
+}
+
+@media only screen and (min-width: 700px) {
+
+  input[type="text"] {
+    width: 400px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .meal-iteam {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .meal-iteam {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mealDetail {
+  color: white;
+  text-align: center;
+  background-color: orange;
+  min-width: 300px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+.showRecipe{
+  display: block;
+}
+
+.mealDetail::-webkit-scrollbar {
+  width: 10px;
+}
+
+.mealDetail::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 3px;
+  border: black groove 1px;
+}
+
+.close-btn{
+  display: flex;
+  justify-content: end;
+}
+
+.close-btn>button {
+  height: 30px;
+  width: 30px;
+  background-color: orange;
+  border: none;
+  border: 1px white groove;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.close-btn>button:hover {
+  background-color: red;
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 1ms;
+}
+
+.recipe-details>h2,
+p {
+  padding: 15px;
+}
+
+.recipe-details>p {
+  display: inline-block;
+  background-color: white;
+  color: orange;
+  font-weight: bolder;
+  border-radius: 10px;
+
+}
+.instruction {
+  padding: 10px;
+}
+
+.img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+.link a{
+  font-weight: bolder;
+  color: white;
+  line-height: 80px;
+  text-decoration: none;
+}
+.not-found{
+  font-size: xx-large;
+  font-weight: 700;
+  color: orange;
+  display: flex;
+  justify-content: center;
+}
+footer{
+  text-align: center;
+  font-size: small;
+  padding: 25px;
+
+}
+footer a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+footer cite{
+font-weight: bold;
+}
